@@ -11,7 +11,6 @@ use WhereCanIWatch\Infrastructure\Doctrine\ORMBroadcastRepository;
 
 class ORMBroadcastRepositoryTest extends IntegrationTestCase
 {
-
     use DatabaseDictionary;
 
     /** @var ORMBroadcastRepository */
