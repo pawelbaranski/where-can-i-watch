@@ -4,12 +4,9 @@ namespace tests;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use tests\traits\DatabaseDictionary;
 
 abstract class IntegrationTestCase extends WebTestCase
 {
-    use DatabaseDictionary;
-
     /** @var ContainerInterface */
     private $container;
 
@@ -26,10 +23,5 @@ abstract class IntegrationTestCase extends WebTestCase
         parent::setUp();
 
         $this->container = static::createClient()->getContainer();
-    }
-
-    protected function tearDown()
-    {
-        parent::tearDown();
     }
 }

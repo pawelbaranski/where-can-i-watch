@@ -4,12 +4,15 @@ namespace tests\integration\Infrastructure\Doctrine;
 
 
 use tests\IntegrationTestCase;
+use tests\traits\DatabaseDictionary;
 use WhereCanIWatch\Domain\Broadcast\Broadcast;
 use WhereCanIWatch\Domain\Broadcast\TVChannel;
 use WhereCanIWatch\Infrastructure\Doctrine\ORMBroadcastRepository;
 
 class ORMBroadcastRepositoryTest extends IntegrationTestCase
 {
+
+    use DatabaseDictionary;
 
     /** @var ORMBroadcastRepository */
     private $repository;

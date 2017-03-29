@@ -7,7 +7,7 @@ imports:
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: en
-    kernel.var_dir: "/home/ubuntu/sf3-sandbox/var"
+    kernel.var_dir: "/home/ubuntu/where-can-i-watch/var"
 
 framework:
     #esi:             ~
