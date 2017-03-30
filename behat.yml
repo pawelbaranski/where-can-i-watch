@@ -1,0 +1,14 @@
+default:
+    suites:
+        search:
+            contexts:
+                - features\bootstrap\FeatureContext
+
+    extensions:
+        Behat\Symfony2Extension: ~
+        Behat\MinkExtension:
+            base_url:  http://0.0.0.0:8080
+            browser_name: 'chrome'
+            sessions:
+                default:
+                    selenium2: ~

@@ -13,11 +13,12 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "tests\\": "tests/"
+            "tests\\": "tests/",
+            "features\\": "features/"
         }
     },
     "require": {
-        "php": ">=5.5.9 <7.0",
+        "php": ">=5.5.9",
         "symfony/symfony": "3.2.*",
         "doctrine/orm": "^2.5",
         "doctrine/doctrine-bundle": "^1.6",
@@ -28,13 +29,20 @@
         "sensio/distribution-bundle": "^5.0",
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "^2.0",
-        "twig/twig": "^1.0||^2.0",
+        "twig/twig": "^1.0",
         "friendsofsymfony/user-bundle": "~2.0@dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
         "phpunit/phpunit": "^5.0",
-        "doctrine/doctrine-fixtures-bundle": "^2.3"
+        "doctrine/doctrine-fixtures-bundle": "^2.3",
+        "behat/behat": "^3.0",
+        "behat/symfony2-extension": "^2.0",
+        "behat/mink": "^1.6",
+        "behat/mink-extension": "^2.0",
+        "behat/mink-browserkit-driver": "^1.2",
+        "behat/mink-goutte-driver": "^1.1.0",
+        "behat/mink-selenium2-driver": "^1.2.0"
     },
     "scripts": {
         "symfony-scripts": [

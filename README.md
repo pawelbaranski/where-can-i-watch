@@ -1,4 +1,5 @@
-where-can-i-watch
-=================
+#### Behat & Selenium
 
-A Symfony project created on March 25, 2017, 11:50 am.
+http://www.pix-art.be/post/testing-your-symfony-application-with-behat
+https://artemzhuravlev.com/blog/how-to-setup-behat-mink-selenium-in-symfony2
+https://www.npmjs.com/package/selenium-standalone
