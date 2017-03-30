@@ -22,11 +22,6 @@ abstract class FormTypeTestCase extends IntegrationTestCase
         return array_replace_recursive($this->validData(), $data);
     }
 
-    protected function validDataBut(array $data)
-    {
-        return $this->validDataWith($data);
-    }
-
     protected function setUp()
     {
         parent::setUp();

@@ -33,7 +33,23 @@ class SearchTypeTest extends FormTypeTestCase
     }
 
     /** @test */
-    public function isValidIfQueryIsNotBlank()
+    public function isInvalidIfQueryIsShorterThanThreeCharacters()
+    {
+        $this->form->submit(['query' => 'ab']);
+
+        $this->assertFalse($this->form->isValid());
+    }
+
+    /** @test */
+    public function isValidIfQueryHasThreeCharacters()
+    {
+        $this->form->submit(['query' => 'abc']);
+
+        $this->assertTrue($this->form->isValid());
+    }
+
+    /** @test */
+    public function isValidIfQueryHasMoreThanThreeCharacters()
     {
         $this->form->submit(['query' => 'some query']);
 
