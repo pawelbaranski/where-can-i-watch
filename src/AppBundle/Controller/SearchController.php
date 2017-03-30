@@ -7,7 +7,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use WhereCanIWatch\AppBundle\Form\Type\SearchType;
+use WhereCanIWatch\AppBundle\Form\Type\BroadcastSearchType;
 
 class SearchController extends Controller
 {
@@ -17,7 +17,7 @@ class SearchController extends Controller
      */
     public function searchAction(Request $request)
     {
-        $form = $this->createForm(SearchType::class);
+        $form = $this->createForm(BroadcastSearchType::class);
 
         $form->handleRequest($request);
 

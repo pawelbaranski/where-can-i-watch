@@ -4,13 +4,13 @@ namespace tests\integration\AppBundle\Form\Type;
 
 
 use tests\FormTypeTestCase;
-use WhereCanIWatch\AppBundle\Form\Type\SearchType;
+use WhereCanIWatch\AppBundle\Form\Type\BroadcastSearchType;
 
-class SearchTypeTest extends FormTypeTestCase
+class BroadcastSearchTypeTest extends FormTypeTestCase
 {
     protected function formTypeClass()
     {
-        return SearchType::class;
+        return BroadcastSearchType::class;
     }
 
     /**

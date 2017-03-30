@@ -27,7 +27,7 @@ class BroadcastSearchPage
     public function searchFor($query)
     {
         $form = $this->searchForm()->form();
-        $form['broadcasts_search'] = ['query' => $query];
+        $form['broadcast_search'] = ['query' => $query];
 
         return $form;
     }
